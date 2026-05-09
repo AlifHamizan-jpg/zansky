@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Portfolio</title>
+</head>
+<body>
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+</style>
+</head>
+<body>
+
+    <section id="home">
+        <div>
+        <h1 style="background-color:DodgerBlue;">MY PORTFOLIO</h1>
+        
+        </div>
+        
+        <nav>
+            <button onclick="showPage('github')">GITHUB</button>
+            <button onclick="showPage('linkedin')">LINKEDIN</button>
+        </nav>
+
+        <div>
+            <img src="https://images.seeklogo.com/logo-png/55/3/team-vamos-logo-png_seeklogo-557257.png" alt="Logo">
+            <html>
+
+            
+            <h2>Alif Hamizan Bin Abd Aziz</h2>
+            <p>I am a hardworking IT student with a strong interest in Mathematics
+               and technology. Having a background in Accounting from high school,
+                I developed a solid foundation in logic and numbers, which I now
+                 apply to my IT studies. I am also an active person who enjoys 
+                 sports and gaming, helping me build teamwork and problem-solving
+                  skills. I love taking on new challenges and am highly motivated
+                   to keep learning and growing in the IT industry.,InsyaAllah
+                    One Day.</p>
+        </div>
+    </section>
+
+    <section id="github" style="display: none;">
+        <div>
+            <button onclick="showPage('home')">BACK</button>
+            <h1>GITHUB</h1>
+        </div>
+        
+        <div>
+            <h3>Repository</h3>
+            <div>https://github.com/AlifHamizan-jpg/mochi.git</div>
+            <div>https://github.com/AlifHamizan-jpg/my_flutter_app1.git</div>
+            <div>https://github.com/AlifHamizan-jpg/assignment3.git</div>
+        </div>
+    </section>
+
+    <section id="linkedin" style="display: none;">
+        <div>
+            <button onclick="showPage('home')">BACK</button>
+            <h1>LINKEDIN</h1>
+        </div>
+        
+        <div>
+            <h3>Experience</h3>
+            <div>represented School University in Ping Pong, Sepak Takraw, Badminton</div>
+            
+            <h3>Education</h3>
+            <div>Universiti Sultan Azlan Shah | Diploma In Information Technology | 2025 - present
+            Maahad Al Mashoor Al Islami | Accounting student | 2020 - 2025
+ 
+ </div>
+
+            <h3>Licenses & certifications</h3>
+            <div>Microsoft Office Specialist 
+ Microsoft Excell Specialist
+ </div>
+
+            <h3>Skills</h3>
+            <div>Basic Programming, Mathematic Logic,
+FInacial Literacy, Troubleshooting, Teamwork
+Strategic Problem Solving
+ </div>
+        </div>
+    </section>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all sections
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('github').style.display = 'none';
+            document.getElementById('linkedin').style.display = 'none';
+            
+            // Show the selected section
+            document.getElementById(pageId).style.display = 'block';
+        }
+    </script>
